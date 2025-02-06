@@ -3,14 +3,25 @@
     width: 100vw;
     scroll-snap-align: start;
 
+    display: grid;
+    grid-template-areas:
+            "MusicTitle  ."
+            "SelectedSong SomeList"
+            "Discography SomeList";
+    grid-template-rows: 2fr 1fr 4fr;
+    grid-gap: 2rem;
+
     box-sizing: border-box;
     padding: 3rem 6rem;
 }
 
+.MusicTitle {
+    grid-area: MusicTitle;
+}
 
 .Music .hl {
     content: "";
-    width: 85%;
+    width: 100%;
     height: 4px;
     background-color: var(--text-primary);
     margin-top: 1%;
@@ -19,4 +30,37 @@
 .Music h1 {
     margin: 0;
     line-height: 1;
+}
+
+.SelectedSong {
+    grid-area: SelectedSong;
+    background-color: var(--primary-container);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.PlayIcon {
+    transition: transform 0.3s ease;
+}
+
+.PlayIcon:hover {
+    transform: scale(1.1);
+}
+
+.AlbumCover {
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: var(--secondary-container);
+}
+
+.Discography {
+    grid-area: Discography;
+    background-color: var(--primary-container);
+}
+
+.SomeList {
+    grid-area: SomeList;
+    background-color: var(--primary-container);
+    margin-left: 2rem;
 }

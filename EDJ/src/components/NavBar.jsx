@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <nav className="NavBar">
             <div className="NavItem">
-                <a href="#">MUSIC</a>
+                <a href="#Music">MUSIC</a>
             </div>
             <div className="NavItem">
                 <a href="#">ART</a>

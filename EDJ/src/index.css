@@ -22,8 +22,8 @@
   --text-primary: white;
   --text-secondary: #a8a8a8;
   --primary-container: #6d6d6d;
-  --secondary-container: #1e1e1e;
-  --accent: #333333;
+  --secondary-container: #333333;
+  --accent: #232323;
   --accent-secondary: #484848;
   --header-overlay: Transparent;
 }
