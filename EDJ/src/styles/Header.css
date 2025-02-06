@@ -10,10 +10,10 @@
 
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 4fr 2fr 1fr;
+    grid-template-rows: 5fr 3fr 1fr;
 
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 3rem 5rem;
 }
 
 .Header h1, .Header h2 {
@@ -29,7 +29,7 @@
 }
 
 .Header h2 {
-    padding: 0 0 1.2rem;
+    padding: 0 0 1.5rem;
     font-size: 15vw;
 }
 
@@ -60,6 +60,7 @@
 .Box2 {
     grid-area: Box2;
     background-color: var(--primary-container);
+    margin-top: 2rem;
 }
 
 .NavBar {
