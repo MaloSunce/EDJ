@@ -1,0 +1,68 @@
+.Header {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-areas:
+            "Title Box1"
+            "Box2 Box2"
+            "NavBar NavBar";
+
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4fr 2fr 1fr;
+
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.Header h1, .Header h2 {
+    margin: 0;
+
+    font-size: 20vw;
+    line-height: 1;
+}
+
+.Header h1 {
+    padding: 0 0 1rem;
+    font-size: 20vw;
+}
+
+.Header h2 {
+    padding: 0 0 1.2rem;
+    font-size: 15vw;
+}
+
+.Title {
+    grid-area: Title;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.Title h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 85%;
+    height: 4px;
+    background-color: var(--text-primary);
+}
+
+.Box1 {
+    grid-area: Box1;
+    background-color: var(--primary-container);
+}
+
+.Box2 {
+    grid-area: Box2;
+    background-color: var(--primary-container);
+}
+
+.NavBar {
+    grid-area: NavBar;
+    background-color: var(--primary-container);
+}
