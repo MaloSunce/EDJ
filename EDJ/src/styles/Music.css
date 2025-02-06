@@ -1,6 +1,7 @@
 .Music {
     height: 100vh;
     width: 100vw;
+    scroll-snap-align: start;
 
     box-sizing: border-box;
     padding: 3rem 6rem;
@@ -11,7 +12,6 @@
     content: "";
     width: 85%;
     height: 4px;
-    margin: 0;
     background-color: var(--text-primary);
     margin-top: 1%;
 }

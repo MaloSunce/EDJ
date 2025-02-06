@@ -10,6 +10,8 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  scroll-snap-type: y mandatory;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,6 +31,10 @@
 [data-theme='sceondary-theme'] {
 }
 
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
