@@ -10,10 +10,10 @@
 
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5fr 3fr 0.9fr;
+    grid-template-rows: 3fr 3fr 0.9fr;
 
     box-sizing: border-box;
-    padding: 3rem 6rem;
+    padding: 3rem 6rem 3rem;
 }
 
 .Header h1, .Header h2 {
@@ -47,7 +47,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: -5px;
-    width: 85%;
+    width: 87%;
     height: 4px;
     background-color: var(--text-primary);
 }

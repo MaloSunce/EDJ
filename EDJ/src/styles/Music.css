@@ -1,0 +1,22 @@
+.Music {
+    height: 100vh;
+    width: 100vw;
+
+    box-sizing: border-box;
+    padding: 3rem 6rem;
+}
+
+
+.Music .hl {
+    content: "";
+    width: 85%;
+    height: 4px;
+    margin: 0;
+    background-color: var(--text-primary);
+    margin-top: 1%;
+}
+
+.Music h1 {
+    margin: 0;
+    line-height: 1;
+}
