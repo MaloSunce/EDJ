@@ -32,14 +32,19 @@
     line-height: 1;
 }
 
+.Music h3 {
+    margin: 0 0 0.5rem 1rem;
+}
+
 .SelectedSong {
     grid-area: SelectedSong;
 }
 
-
 .Discography {
     grid-area: Discography;
-    background-color: var(--primary-container);
+    display: flex;
+    flex-direction: column;
+    max-height: 45vh;
 }
 
 .SomeList {

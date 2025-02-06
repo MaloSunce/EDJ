@@ -10,8 +10,8 @@ function App() {
           display: "flex",
           flexDirection: "column",
           gap: "10rem"}}>
-            <Header></Header>
-            <Music></Music>
+            <Header/>
+            <Music/>
         </div>
     )
 }

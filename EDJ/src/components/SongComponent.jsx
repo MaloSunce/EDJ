@@ -22,7 +22,7 @@ function SongComponent() {
             </div>
             <IoIosPlay className="PlayIcon" style={{
                 color: 'var(--text-primary)',
-                fontSize: '3.5rem',
+                fontSize: '3rem',
                 alignSelf: 'center',
                 marginLeft: 'auto',
                 paddingRight: '10px',

@@ -12,11 +12,19 @@ function Music() {
 
             {/* Selected display song */}
             <div className="SelectedSong">
-                <SongComponent></SongComponent>
+                <h3>Artis's choice</h3>
+                <SongComponent/>
             </div>
 
             <div className="Discography">
-
+                <h3>Discography</h3>
+                <div style={{overflowY: 'auto'}}>
+                    {
+                        Array(7).fill().map((_, index) =>
+                            <SongComponent key={index} index={index}/>
+                        )
+                    }
+                </div>
             </div>
 
             <div className="SomeList">
