@@ -1,4 +1,6 @@
 import '../styles/Header.css'
+import './NavBar.jsx'
+import NavBar from "./NavBar.jsx";
 
 function Header() {
     return (
@@ -10,7 +12,9 @@ function Header() {
             </div>
             <div className="Box1"></div>
             <div className="Box2"></div>
-            <div className="NavBar"></div>
+            <div className="NavBar">
+                <NavBar></NavBar>
+            </div>
         </div>
     )
 }

@@ -10,27 +10,27 @@
 
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5fr 3fr 1fr;
+    grid-template-rows: 5fr 3fr 0.9fr;
 
     box-sizing: border-box;
-    padding: 3rem 5rem;
+    padding: 3rem 6rem;
 }
 
 .Header h1, .Header h2 {
     margin: 0;
-
-    font-size: 20vw;
     line-height: 1;
+    /*letter-spacing: -3rem;*/
+    --h1-size: 20vw;
 }
 
 .Header h1 {
     padding: 0 0 1rem;
-    font-size: 20vw;
+    font-size: var(--h1-size);
 }
 
 .Header h2 {
-    padding: 0 0 1.5rem;
-    font-size: 15vw;
+    padding: 0 0 1.4rem;
+    font-size:  calc(var(--h1-size) * 0.8);
 }
 
 .Title {
@@ -65,5 +65,4 @@
 
 .NavBar {
     grid-area: NavBar;
-    background-color: var(--primary-container);
 }
