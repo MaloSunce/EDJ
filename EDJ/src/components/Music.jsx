@@ -1,6 +1,5 @@
 import '../styles/Music.css'
-import { IoIosPlay } from "react-icons/io";
-import { SiAffinityphoto } from "react-icons/si";
+import SongComponent from "./SongComponent.jsx";
 
 function Music() {
 
@@ -11,29 +10,9 @@ function Music() {
                 <div className="hl"></div>
             </div>
 
-            <div className="SelectedSong">  {/*NB temporary flex display for placeholder icon*/}
-                <div className="AlbumCover" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
-                    {/*NB placeholder icon*/}
-                    <SiAffinityphoto style={{
-                        color: 'rgba(255, 255, 255, 0.2)',
-                        fontSize: '7vh',
-                    }} />
-                </div>
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                }}>
-                    <h3 style={{margin: '0'}}>Song Title</h3>
-                    <p style={{margin: '0'}}>From Album</p>
-                </div>
-                <IoIosPlay className="PlayIcon" style={{
-                    color: 'var(--text-primary)',
-                    fontSize: '3.5rem',
-                    alignSelf: 'center',
-                    marginLeft: 'auto',
-                    paddingRight: '10px',
-                }} />
+            {/* Selected display song */}
+            <div className="SelectedSong">
+                <SongComponent></SongComponent>
             </div>
 
             <div className="Discography">

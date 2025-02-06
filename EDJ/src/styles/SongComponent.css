@@ -1,0 +1,21 @@
+.SongComponent {
+    background-color: var(--primary-container);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 100%;
+}
+
+.PlayIcon {
+    transition: transform 0.3s ease;
+}
+
+.PlayIcon:hover {
+    transform: scale(1.1);
+}
+
+.AlbumCover {
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: var(--secondary-container);
+}
