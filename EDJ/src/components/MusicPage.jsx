@@ -1,7 +1,7 @@
-import '../styles/Music.css'
+import '../styles/MusicPage.css'
 import SongComponent from "./SongComponent.jsx";
 
-function Music() {
+function MusicPage() {
 
     return (
         <div className="Music" id="Music">
@@ -34,4 +34,4 @@ function Music() {
     );
 }
 
-export default Music;
+export default MusicPage;

@@ -1,0 +1,12 @@
+.Art {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+
+    box-sizing: border-box;
+    padding: 1rem 6rem;
+}
+
+.Art h3 {
+
+}

@@ -1,10 +1,10 @@
-import {useState} from 'react'
 import Header from './components/Header.jsx'
-import Music from './components/Music.jsx'
 import FloatingHeader from './components/FloatingHeader.jsx'
 
+import MusicPage from './components/MusicPage.jsx'
+import Art from './components/ArtPage.jsx'
+
 function App() {
-    const [count, setCount] = useState(0)
 
     return (
         <div style={{
@@ -13,7 +13,8 @@ function App() {
           gap: "10rem"}}>
             <Header/>
             <FloatingHeader/>
-            <Music/>
+            <MusicPage/>
+            <Art/>
         </div>
     )
 }

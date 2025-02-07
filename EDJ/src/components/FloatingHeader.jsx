@@ -1,6 +1,7 @@
 import '../styles/FloatingHeader.css'
 
-import {RiFacebookCircleLine, RiSoundcloudLine, RiYoutubeLine} from "react-icons/ri";
+import {RiFacebookCircleLine, RiInstagramLine,
+    RiSoundcloudLine, RiYoutubeLine} from "react-icons/ri";
 import {AiOutlineSpotify} from "react-icons/ai";
 
 function FloatingHeader() {
@@ -11,6 +12,9 @@ function FloatingHeader() {
             </a>
             <a href="https://open.spotify.com" target="_blank">
                 <AiOutlineSpotify className="HeaderIcon"/>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <RiInstagramLine className="HeaderIcon"/>
             </a>
             <a href="https://www.facebook.com/" target="_blank">
                 <RiFacebookCircleLine className="HeaderIcon"/>
