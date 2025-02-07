@@ -49,6 +49,5 @@
 
 .SomeList {
     grid-area: SomeList;
-    background-color: var(--primary-container);
     margin-left: 2rem;
 }
