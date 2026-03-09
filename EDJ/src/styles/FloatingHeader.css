@@ -1,14 +1,14 @@
 .FloatingHeader {
     width: 100%;
     height: 6vh;
-
     position: fixed;
     display: flex;
     flex-direction: row;
-
     justify-content: end;
     align-items: center;
     gap: 2rem;
+    background-color: #b38ca9;
+    padding-top: 1vh;
 }
 
 .HeaderIcon {

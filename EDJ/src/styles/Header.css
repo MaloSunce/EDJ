@@ -5,16 +5,15 @@
 
     display: grid;
     grid-template-areas:
-            "Title Box1"
-            "Box2 Box2"
+            "Title ."
             "NavBar NavBar";
 
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3fr 3fr 0.6fr;
+    grid-template-rows: 3.5fr 0.4fr;
 
     box-sizing: border-box;
-    padding: 3rem 6rem 3rem;
+    padding: 3rem 9rem 4rem 9rem;
 
     background-size: cover;
     background-position: center;
@@ -23,8 +22,7 @@
 .Header h1, .Header h2 {
     margin: 0;
     line-height: 1;
-    /*letter-spacing: -3rem;*/
-    --h1-size: 18vw;
+    --h1-size: 12vw;
 }
 
 .Header h1 {
@@ -42,29 +40,7 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-}
-
-
-.Title h1::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 87%;
-    height: 4px;
-    background-color: var(--text-primary);
-}
-
-.Box1 {
-    grid-area: Box1;
-    background-color: var(--primary-container);
-}
-
-.Box2 {
-    grid-area: Box2;
-    background-color: var(--primary-container);
-    margin-top: 2rem;
+    padding-left: 10vh;
 }
 
 .NavBar {
