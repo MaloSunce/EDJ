@@ -8,17 +8,14 @@ function SongComponent() {
             <div className="AlbumCover" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                 {/*NB placeholder icon*/}
                 <SiAffinityphoto style={{
-                    color: 'rgba(255, 255, 255, 0.7)',
+                    color: 'var(--text-primary)',
+                    opacity: '0.5',
                     fontSize: '2rem',
                 }}/>
             </div>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-            }}>
-                <h3 style={{margin: '0'}}>Song Title</h3>
-                <p style={{margin: '0'}}>From Album</p>
+            <div className="TextContainter">
+                <h3>Song Title</h3>
+                <p>From Album</p>
             </div>
             <IoIosPlay className="PlayIcon" style={{
                 color: 'var(--text-primary)',

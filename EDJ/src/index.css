@@ -1,12 +1,12 @@
 :root {
     /* Dark theme */
-    --background: #00b4d8;
-    --background-secondary: #0077b6;
+    --background: #2f2235;
+    --background-secondary: #3f3244;
     --text-primary: white;
-    --text-secondary: #caf0f8;
-    --primary-container: #90e0ef;
-    --secondary-container: #90e0ef;
-    --accent: #03045e;
+    --text-secondary: #bfc3ba;
+    --primary-container: #60495a;
+    --secondary-container: #a9aca9;
+    --accent: #947a8d;
     --accent-secondary: #484848;
     --header-overlay: Transparent;
     /**/
