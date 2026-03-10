@@ -15,7 +15,7 @@ function MusicPage() {
             </div>
 
             <div className="Discography">
-                <h3>Selected songs</h3>
+                <h3>Artist's choice</h3>
                 <div className="SelectedSongs">
                     {
                         Array(4).fill().map((_, index) =>

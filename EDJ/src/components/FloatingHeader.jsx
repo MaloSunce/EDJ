@@ -22,7 +22,7 @@ function FloatingHeader() {
             <a href="https://soundcloud.com" target="_blank">
                 <RiSoundcloudLine className="HeaderIcon"/>
             </a>
-            <div style={{width: '4rem'}}></div>
+            <div style={{width: '0.1rem'}}></div>
         </div>
     );
 }
