@@ -11,7 +11,7 @@
 .NavItem {
     width: 22%;
     height: 100%;
-    background-color: var(--primary-container);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), var(--primary-container));
     color: var(--text-primary);
     display: flex;
     justify-content: center;
@@ -19,6 +19,6 @@
 }
 
 .NavBar a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
