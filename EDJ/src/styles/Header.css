@@ -50,17 +50,17 @@
 }
 
 /* Inifinity reflection */
-p, p:before {
+.Header p, .Header p:before {
     display: block;
     margin: 0;
     padding: 0;
 }
 
-p, p:before, p:after {
+.Header p, .Header p:before, .Header p:after {
     position: relative;
 }
 
-p:before {
+.Header p:before {
     content: "∞";
     top: 4.5rem;
     transform: scale(1, -1);
@@ -68,7 +68,7 @@ p:before {
     z-index: 1;
 }
 
-p:after {
+.Header p:after {
     content: '';
     display: block;
     top: -0.7rem;
