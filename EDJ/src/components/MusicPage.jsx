@@ -7,28 +7,22 @@ function MusicPage() {
         <div className="Music" id="Music">
             <div className="MusicTitle">
                 <h1>MUSIC</h1>
-                <div className="hl"></div>
             </div>
 
             {/* Selected display song */}
-            <div className="SelectedSong">
-                <h3>Artis's choice</h3>
-                <SongComponent/>
+            <div className="Tidal">
+                <div className="TidalBox"> </div>
             </div>
 
             <div className="Discography">
-                <h3>Discography</h3>
-                <div style={{overflowY: 'auto'}}>
+                <h3>Selected songs</h3>
+                <div className="SelectedSongs">
                     {
-                        Array(7).fill().map((_, index) =>
+                        Array(4).fill().map((_, index) =>
                             <SongComponent key={index} index={index}/>
                         )
                     }
                 </div>
-            </div>
-
-            <div className="SomeList">
-
             </div>
         </div>
     );

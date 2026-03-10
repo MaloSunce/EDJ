@@ -8,8 +8,8 @@ function SongComponent() {
             <div className="AlbumCover" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                 {/*NB placeholder icon*/}
                 <SiAffinityphoto style={{
-                    color: 'rgba(255, 255, 255, 0.2)',
-                    fontSize: '7vh',
+                    color: 'rgba(255, 255, 255, 0.7)',
+                    fontSize: '2rem',
                 }}/>
             </div>
             <div style={{
@@ -22,10 +22,10 @@ function SongComponent() {
             </div>
             <IoIosPlay className="PlayIcon" style={{
                 color: 'var(--text-primary)',
-                fontSize: '3rem',
+                fontSize: '2rem',
                 alignSelf: 'center',
                 marginLeft: 'auto',
-                paddingRight: '10px',
+                paddingRight: '0.5rem',
             }}/>
         </div>
     );

@@ -6,12 +6,12 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    gap: 2rem;
-    background-color: #b38ca9;
+    gap: 1.5rem;
+    background-color:  var(--background-secondary);
     padding-top: 1vh;
 }
 
 .HeaderIcon {
-    color: var(--accent-secondary);
-    font-size: 2rem;
+    color: var(--accent);
+    font-size: 1.8rem;
 }

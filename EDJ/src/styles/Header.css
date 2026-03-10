@@ -2,27 +2,25 @@
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
-
     display: grid;
     grid-template-areas:
-            "Title ."
-            "NavBar NavBar";
-
+        "Title ."
+        "NavBar NavBar";
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3.5fr 0.4fr;
-
     box-sizing: border-box;
-    padding: 3rem 9rem 4rem 9rem;
-
+    padding: 3rem 10rem 5rem 10rem;
     background-size: cover;
     background-position: center;
+    background-color: var(--background);
 }
 
 .Header h1, .Header h2 {
     margin: 0;
     line-height: 1;
     --h1-size: 12vw;
+
 }
 
 .Header h1 {

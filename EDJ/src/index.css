@@ -1,31 +1,28 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-optical-sizing: auto;
-
-  font-style: normal;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  scroll-snap-type: y mandatory;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Dark theme */
-  --background: #242424;
-  --text-primary: white;
-  --text-secondary: #a8a8a8;
-  --primary-container: #6d6d6d;
-  --secondary-container: #333333;
-  --accent: #232323;
-  --accent-secondary: #484848;
-  --header-overlay: Transparent;
+    /* Dark theme */
+    --background: #00b4d8;
+    --background-secondary: #0077b6;
+    --text-primary: white;
+    --text-secondary: #caf0f8;
+    --primary-container: #90e0ef;
+    --secondary-container: #90e0ef;
+    --accent: #03045e;
+    --accent-secondary: #484848;
+    --header-overlay: Transparent;
+    /**/
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--background-color);
+    scroll-snap-type: y mandatory;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 [data-theme='sceondary-theme'] {
