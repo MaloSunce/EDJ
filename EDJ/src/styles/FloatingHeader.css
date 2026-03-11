@@ -2,12 +2,18 @@
     width: 100%;
     height: 5vh;
     position: fixed;
+    display: grid;
+    grid-template-areas: "StarIcon SocialMedia";
+    grid-template-rows: 1fr 10fr;
+    padding-top: 2vh;
+    z-index: 10;
+}
+
+.SocialMediaIcons {
     display: flex;
     flex-direction: row;
     justify-content: end;
     gap: 1.5rem;
-    padding-top: 2vh;
-    z-index: 10;
 }
 
 .HeaderIcon {
@@ -16,5 +22,15 @@
 }
 
 a {
+    grid-area: SocialMedia;
     color: var(--text-primary);
+}
+
+.StarIcon {
+    grid-area: StarIcon;
+   
+}
+
+.StarIcon img {
+    height: 2rem;
 }

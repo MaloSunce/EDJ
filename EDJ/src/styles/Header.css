@@ -9,6 +9,16 @@
     background-color: black;
 }
 
+.StarIcon {
+    position: sticky;
+    top: -49rem;
+    left: -9.5rem;
+}
+
+.StarIcon img {
+    height: 4rem;
+}
+
 .Title {
     --font-size: 22vh;
     font-size: var(--font-size);

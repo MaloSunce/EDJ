@@ -48,7 +48,7 @@
 }
 
 .TidalBox {
-    height: 45vh;
-    width: 45vh;
+    height: 18rem;
+    width: 18rem;
     background-color: var(--primary-container);
 }
