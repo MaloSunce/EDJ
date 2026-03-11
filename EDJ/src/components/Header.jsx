@@ -16,16 +16,17 @@ function Header() {
                     alignItems: 'center',
                     paddingLeft: '1.5rem',
                     position: 'relative',
-                    top: '7rem',
+                    top: '5.5rem',
                     opacity: '0.8'
                 }}>
-                    <h2 > Fans </h2>
-                    <p style={{translate: '0% -50%'}}> ∞ </p>
+                    <h2 > Fans: </h2>
+                    <p style={{translate: '0% -65%'}}> ∞ </p>
                 </div>
             </div>
             <div className="NavBar">
                 <NavBar></NavBar>
             </div>
+
         </div>
     )
 }
