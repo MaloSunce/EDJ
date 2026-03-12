@@ -6,13 +6,14 @@
     grid-template-areas:
         "MusicTitle  MusicTitle"
         "Tidal Discography";
-    grid-template-rows: 3fr 1fr;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 2rem;
     align-items: center;
     
     box-sizing: border-box;
-    row-gap: 4rem;
+    row-gap: 3rem;
     padding: 9rem;
+    --box-height: 20rem;
 }
 
 .MusicTitle {
@@ -32,13 +33,42 @@
 
 .Tidal {
     grid-area: Tidal;
+    height: var(--box-height);
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: 0.7s;
+    opacity: 0.7;
+}
+
+.Tidal:hover {
+    transition: 0.5s;
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.Tidal img {
+    width: 11rem;
+    margin: 0 0 3rem 2rem;
+}
+
+.Reflection {
+    position: relative;
+    bottom: 25%;
+    display: block;
+    width: 100%;
+    transform: scaleY(-1);
+    opacity: 0.6;
+    filter: blur(1px);
+    mask-image: linear-gradient(transparent 45%, black);
 }
 
 .Discography {
     grid-area: Discography;
     display: flex;
     flex-direction: column;
-    max-height: 45vh;
+    height: var(--box-height);
 }
 
 .SelectedSongs {
@@ -47,8 +77,3 @@
     gap: 1rem;
 }
 
-.TidalBox {
-    height: 18rem;
-    width: 18rem;
-    background-color: var(--primary-container);
-}

@@ -1,6 +1,9 @@
 import '../styles/MusicPage.css'
 import SongComponent from "./SongComponent.jsx";
 
+import tidal from '../../public/Images/tidal-box.png'; 
+
+
 function MusicPage() {
 
     return (
@@ -11,7 +14,8 @@ function MusicPage() {
 
             {/* Selected display song */}
             <div className="Tidal">
-                <div className="TidalBox"> </div>
+                <img src={tidal} alt="Tidal logo" />
+                <img class="Reflection" src={tidal} alt="Tidal logo reflection" />
             </div>
 
             <div className="Discography">
