@@ -4,11 +4,12 @@ function NavBar() {
 
     return (
         <nav className="NavBar">
-            <a href="#">ART</a>
-            <a href="#">LIFE</a>
-            <a href="#Music">MUSIC</a>
-            <a href="#Music">SHOP</a>
-            <div style={{width: '50rem'}}/>
+            <div className="NavContainer">
+                <a href="#">ART</a>
+                <a href="#">LIFE</a>
+                <a href="#Music">MUSIC</a>
+                <a href="#Music">SHOP</a>
+            </div>
         </nav>
     );
 }

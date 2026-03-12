@@ -3,7 +3,13 @@
     display: flex;
     flex-direction: row;
     height: 2.8rem;
-    box-shadow: 2px 2px 30px 10px rgba(0, 0 , 0, 0.3);
+    box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.SongComponent:hover {
+    transition: 0.5s;
+    height: 3.5rem;
 }
 
 .TextContainter {

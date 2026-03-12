@@ -1,13 +1,19 @@
 .NavBar {
-    width: 100vw;
-    height: 6vh;
+    width: 102vw;
+    height: 5vh;
     background-color: rgba(70, 70, 70, 0.3);
+}
+
+.NavContainer {
+    height: 100%;
+    width: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 8rem;
+    padding-left: 11vw;
     transition: 0.5s;
+    z-index: -5;
 }
 
 .NavBar:hover {
@@ -15,14 +21,14 @@
     transition: 0.5s;
 }
 
-.NavBar a {
+.NavContainer a {
     font-size: 1.1rem;
     opacity: 0.8;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.NavBar a:hover {
+.NavContainer a:hover {
     transition: 0.5s;
     transform: scale(1.2);
     opacity: 1;

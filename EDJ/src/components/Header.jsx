@@ -17,7 +17,7 @@ function Header() {
                     alignItems: 'center',
                     paddingLeft: '1.5rem',
                     position: 'relative',
-                    top: '5.5rem',
+                    top: '5.6rem',
                     opacity: '0.8'
                 }}>
                     <h2 > Fans: </h2>
