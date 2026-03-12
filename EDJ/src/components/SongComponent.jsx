@@ -19,10 +19,10 @@ function SongComponent() {
             </div>
             <IoIosPlay className="PlayIcon" style={{
                 color: 'var(--text-primary)',
-                fontSize: '2rem',
+                fontSize: '1.8rem',
                 alignSelf: 'center',
                 marginLeft: 'auto',
-                paddingRight: '0.5rem',
+                paddingRight: '0.8rem',
             }}/>
         </div>
     );

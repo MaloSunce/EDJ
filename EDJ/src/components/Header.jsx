@@ -1,6 +1,5 @@
 import '../styles/Header.css'
 import NavBar from "./NavBar.jsx";
-import star from '../../public/Icons/star.png';
 
 function Header() {
     return (

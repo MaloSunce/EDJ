@@ -1,9 +1,10 @@
 .SongComponent {
-    background-color: var(--primary-container);
+    /*    background-color: rgba(0, 0, 0, 0.7);*/
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.8), black);
     display: flex;
     flex-direction: row;
     height: 3rem;
-/*    outline-style: dotted;*/
+    box-shadow: 2px 2px 30px 10px rgba(0, 0 , 0, 0.6);
 }
 
 .TextContainter {
@@ -34,7 +35,7 @@ p {
 }
 
 .PlayIcon:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 .AlbumCover {
