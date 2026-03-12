@@ -1,6 +1,6 @@
 .SongComponent {
     /*    background-color: rgba(0, 0, 0, 0.7);*/
-    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.8), black);
+    background-image: linear-gradient(to left, grey, rgba(0, 0, 0, 0.4), grey);
     display: flex;
     flex-direction: row;
     height: 3rem;
