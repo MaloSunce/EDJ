@@ -1,9 +1,8 @@
 .SongComponent {
-    /*    background-color: rgba(0, 0, 0, 0.7);*/
     background-image: linear-gradient(to left, grey, rgba(0, 0, 0, 0.4), grey);
     display: flex;
     flex-direction: row;
-    height: 3rem;
+    height: 2.8rem;
     box-shadow: 2px 2px 30px 10px rgba(0, 0 , 0, 0.3);
 }
 
