@@ -3,15 +3,13 @@
     width: 100vw;
     scroll-snap-align: start;
     box-sizing: border-box;
-    padding: 3rem 10rem 5rem 10rem;
-    background-size: cover;
-    background-position: center;
     background-color: black;
+    padding-left: 10vw;
 }
 
+
 .Title {
-    --font-size: 22vh;
-    font-size: var(--font-size);
+    font-size: 22vh;
 }
 
 /* Title reflection */
@@ -21,13 +19,13 @@
     padding: 0;
 }
 
-.Title, .Title:before, .Title:after {
+.Title:before, .Title:after {
     position: relative;
 }
 
 .Title:before {
     content: "EVADJ";
-    top: 21.5rem;
+    top: 54vh;
     transform: scale(1, -1);
     backface-visibility: visible;
     z-index: 1;
@@ -36,7 +34,7 @@
 .Title:after {
     content: '';
     display: block;
-    top: -2rem;
+    top: -5vh;
     left: 0;
     width: 100%;
     height: 170px;
@@ -78,8 +76,23 @@
     font-size: 2rem;
 }
 
-.NavBar {
+.Nav {
     position: relative;
-    top: -3rem;
+    top: -105%;
+    left: -11%;
     z-index: 2;
+    padding-left: 0.3rem;
+}
+
+.CompactDiskimg {
+    width: 48vw;
+    position: relative;
+    top: -88vh;
+    left: 77%;
+    transition: 1.2s;
+}
+
+.CompactDiskimg:hover {
+    transition: 0.7s;
+    rotate: 180deg;
 }

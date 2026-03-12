@@ -1,5 +1,5 @@
 .SongComponent {
-    background-image: linear-gradient(to left, grey, rgba(0, 0, 0, 0.4), grey);
+    background-image: linear-gradient(to left, grey, rgba(0, 0, 0, 0.6), grey);
     display: flex;
     flex-direction: row;
     height: 2.8rem;

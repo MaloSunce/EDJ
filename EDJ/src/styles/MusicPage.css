@@ -15,7 +15,7 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    padding: 0 20rem 0 5rem;
+    padding: 0 20rem 0 5.2rem;
 }
 
 .Music h1 {
@@ -41,7 +41,7 @@
 .SelectedSongs {
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    width: 42rem;
     gap: 1.2rem;
     z-index: 1;
 }

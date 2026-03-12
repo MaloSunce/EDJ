@@ -1,5 +1,6 @@
 import '../styles/Header.css'
 import NavBar from "./NavBar.jsx";
+import cd2 from '../../public/Images/cd2.png'
 
 function Header() {
     return (
@@ -23,7 +24,10 @@ function Header() {
                     <p style={{translate: '0% -65%'}}> ∞ </p>
                 </div>
             </div>
-            <div className="NavBar">
+
+            <img className="CompactDiskimg" src={cd2} alt="Compact disc background image" />;
+
+            <div className="Nav">
                 <NavBar></NavBar>
             </div>
         </div>

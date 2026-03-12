@@ -22,7 +22,7 @@ function SongComponent() {
                 fontSize: '1.8rem',
                 alignSelf: 'center',
                 marginLeft: 'auto',
-                paddingRight: '0.8rem',
+                paddingRight: '0.7rem',
             }}/>
         </div>
     );
