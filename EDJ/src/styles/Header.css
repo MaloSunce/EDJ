@@ -37,43 +37,51 @@
     top: -5vh;
     left: 0;
     width: 100%;
-    height: 170px;
+    height: 20vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 1) 50%);
     z-index: 2;
 }
 
+.Header h2 {
+    opacity: 0.8;
+    padding-left: 2rem !important;
+    padding-top: 2rem !important;
+}
+
 /* Inifinity reflection */
-.Header p, .Header p:before {
+.Header h2, .Header h2:before {
     display: block;
     margin: 0;
     padding: 0;
 }
 
-.Header p, .Header p:before, .Header p:after {
+.Header h2, .Header h2:before, .Header h2:after {
     position: relative;
 }
 
-.Header p:before {
-    content: "∞";
-    top: 4.5rem;
-    transform: scale(1, -1);
-    backface-visibility: visible;
-    z-index: 1;
+.Header h2:before {
+     content: "∞ Fans"; 
+     top: 5rem;
+     transform: scale(1, -1);
+     backface-visibility: visible;
+     z-index: 1;
 }
 
-.Header p:after {
+.Header h2:after {
     content: '';
     display: block;
     top: -0.7rem;
     left: 0;
     width: 100%;
     height: 3rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 1) 35%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 1) 50%);
     z-index: 2;
 }
 
-.Header h2, .Header p {
+.Header h2{
     font-size: 2rem;
+    position: relative;
+    top: 1.5rem;
 }
 
 .Nav {
@@ -87,8 +95,8 @@
 .CompactDiskimg {
     width: 48vw;
     position: relative;
-    top: -88vh;
-    left: 77%;
+    top: -82vh;
+    left: 75%;
     transition: 1.2s;
     z-index: 5;
 }

@@ -1,7 +1,7 @@
 import '../styles/MusicPage.css'
 import SongComponent from "./SongComponent.jsx";
 
-import tidal from '../../public/Images/tidal-box-straight.png'; 
+import tidal from '../../public/Icons/tidal-logo.png'; 
 import cd from '../../public/Images/cd.png'
 
 

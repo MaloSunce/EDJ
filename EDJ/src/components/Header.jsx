@@ -11,18 +11,7 @@ function Header() {
                 alignItems: 'center',
             }}>
                 <h1 className="Title">EVADJ</h1>
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'column', 
-                    alignItems: 'center',
-                    paddingLeft: '1.5rem',
-                    position: 'relative',
-                    top: '5.6rem',
-                    opacity: '0.8'
-                }}>
-                    <h2 > Fans: </h2>
-                    <p style={{translate: '0% -65%'}}> ∞ </p>
-                </div>
+                <h2>∞ Fans</h2>
             </div>
 
             <img className="CompactDiskimg" src={cd2} alt="Compact disc background image" />;
