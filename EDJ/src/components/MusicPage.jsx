@@ -1,7 +1,7 @@
 import '../styles/MusicPage.css'
 import SongComponent from "./SongComponent.jsx";
 
-import tidal from '../../public/Images/tidal-box.png'; 
+import tidal from '../../public/Images/tidal-box-straight.png'; 
 import cd from '../../public/Images/cd.png'
 
 
@@ -23,6 +23,7 @@ function MusicPage() {
                     }
                 </div>
             </div>
+            <div className="OverlayBox"></div>
             <div className="CompactDiskContainer">
                 <img src={cd} alt="Compact disk background image" />
                 <img src={cd} alt="Compact disk background image" />

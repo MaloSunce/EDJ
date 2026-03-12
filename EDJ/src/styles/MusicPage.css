@@ -10,27 +10,14 @@
     --box-height: 20rem;
 }
 
-.CompactDiskContainer {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    height: 120vh;
-    z-index: -10;
-    top: -200%;
-}
-
-.CompactDiskContainer img {
-    height: 110%;
-    rotate: -80deg;
-}
-
 
 .Music h1 {
     margin: 0 0 -2rem 0;
     line-height: 1;
     font-size: 5rem;
     position: relative;
-    left: 6rem;
+    left: 3.7rem;
+    z-index: 1;
 }
 
 .SubTitle {
@@ -40,39 +27,6 @@
 
 .Music h3 {
     margin: 0 0 0.5rem 1rem;
-}
-
-.Tidal {
-    grid-area: Tidal;
-    height: var(--box-height);
-    width: 14rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    transition: 0.7s;
-    opacity: 0.7;
-}
-
-.Tidal:hover {
-    transition: 0.5s;
-    transform: scale(1.08);
-    opacity: 1;
-}
-
-.Tidal img {
-    width: 11rem;
-    margin: 0 0 3rem 2rem;
-}
-
-.Reflection {
-    position: relative;
-    bottom: 25%;
-    display: block;
-    width: 100%;
-    transform: scaleY(-1);
-    opacity: 0.6;
-    filter: blur(1px);
-    mask-image: linear-gradient(transparent 45%, black);
 }
 
 .Discography {
@@ -87,5 +41,28 @@
     flex-direction: column;
     gap: 1rem;
     padding: 0 2rem 0 6rem;
+    z-index: 1;
 }
 
+.CompactDiskContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 120vh;
+    z-index: -10;
+    top: -200%;
+}
+
+.CompactDiskContainer img {
+    height: 110%;
+    rotate: -80deg;
+}
+
+.OverlayBox {
+    width: 100%;
+    min-height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: 145%;
+    left: 0%
+}
