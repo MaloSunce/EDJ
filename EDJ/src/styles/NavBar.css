@@ -1,7 +1,6 @@
 .NavBar {
-    width: 102vw;
+    width: 100%;
     height: 5vh;
-    background-color: rgba(70, 70, 70, 0.3);
 }
 
 .NavContainer {
@@ -11,25 +10,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 11vw;
-    transition: 0.5s;
+    padding: 0 15vw 0 11vw;
     z-index: -5;
+    background-image: linear-gradient(to right, rgba(60, 60, 60, 0.4) 70%, rgba(0, 0, 0, 0));
 }
 
-.NavBar:hover {
-    background-color: rgba(70, 70, 70, 0.5);
-    transition: 0.5s;
-}
 
 .NavContainer a {
     font-size: 1.1rem;
     opacity: 0.8;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .NavContainer a:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     transform: scale(1.2);
     opacity: 1;
 }

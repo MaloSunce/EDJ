@@ -11,7 +11,7 @@ function Header() {
                 alignItems: 'center',
             }}>
                 <h1 className="Title">EVADJ</h1>
-                <h2>∞ Fans</h2>
+                <h2>∞ fans</h2>
             </div>
 
             <img className="CompactDiskimg" src={cd2} alt="Compact disc background image" />;

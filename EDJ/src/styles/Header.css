@@ -60,7 +60,7 @@
 }
 
 .Header h2:before {
-     content: "∞ Fans"; 
+     content: "∞ fans"; 
      top: 5rem;
      transform: scale(1, -1);
      backface-visibility: visible;
