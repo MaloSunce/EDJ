@@ -1,5 +1,7 @@
 :root {
-    /* Dark theme */
+    /*MusicPage: disc animation*/
+    --spinDisc: 10;
+    /* Colors */
     --background: #2f2235;
     --background-secondary: #3f3244;
     --text-primary: white;
@@ -9,7 +11,7 @@
     --accent: #947a8d;
     --accent-secondary: #484848;
     --header-overlay: Transparent;
-    /**/
+    /* Misc*/
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;

@@ -1,11 +1,12 @@
 import '../styles/MusicPage.css'
 import SongComponent from "./SongComponent.jsx";
 
-import tidal from '../../public/Icons/tidal-logo.png'; 
 import cd from '../../public/Images/cd.png'
 
 
 function MusicPage() {
+
+    let activateDiscSpin = "5s";
 
     return (
         <div className="Music" id="Music">
@@ -24,8 +25,10 @@ function MusicPage() {
             </div>
 
             <div className="CompactDiskContainer">
-                <img src={cd} alt="Compact disk background image" />
-                <img src={cd} alt="Compact disk background image" />
+                <img className="Disc1" src={cd} alt="Compact disk background image"/>
+                <img className="Disc2" src={cd} alt="Compact disk background image"
+                    style={{ animation: "disc2spin " + activateDiscSpin + " linear infinite"}}
+                />
             </div>
         </div>
     );

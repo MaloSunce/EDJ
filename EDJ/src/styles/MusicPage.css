@@ -62,7 +62,19 @@
     top: -110%;
 }
 
-.CompactDiskContainer img {
+.Disc1, .Disc2 {
     height: 110%;
     rotate: -80deg;
 }
+
+
+@keyframes disc2spin {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
