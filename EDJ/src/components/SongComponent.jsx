@@ -11,8 +11,6 @@ function ToggleDiscSpin() {
     discSpinVal = (discSpinVal === '0s') ? '5s' : '0s';
 
     document.documentElement.style.setProperty('--disc-spin', discSpinVal);
-
-    console.log("Malo: --disc-spin: " + discSpinVal);
 }
 
 function SongComponent() {
@@ -30,16 +28,13 @@ function SongComponent() {
                 <h3>Song Title</h3>
                 <p>From Album</p>
             </div>
-            <button onClick={() => ToggleDiscSpin()}>
-                <IoIosPlay className="PlayIcon" style={{
-                    color: 'var(--text-primary)',
-                    fontSize: '1.8rem',
-                    alignSelf: 'center',
-                    marginLeft: 'auto',
-                    paddingRight: '0.7rem',
-                }}
-                />
-            </button>
+            <IoIosPlay className="PlayIcon" onClick={() => ToggleDiscSpin()} style={{
+                color: 'var(--text-primary)',
+                fontSize: '1.8rem',
+                marginLeft: 'auto',
+                alignSelf: 'center',
+                paddingRight: '0.7rem',
+            }} />
         </div>
     );
 }

@@ -43,6 +43,7 @@ p {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    margin-left: auto;
 }
 
 .PlayIcon {
