@@ -2,12 +2,7 @@ import '../styles/MusicPage.css'
 import SongComponent from "./SongComponent.jsx";
 
 import cd from '../../public/Images/cd.png'
-
-
 function MusicPage() {
-
-    let activateDiscSpin = "5s";
-
     return (
         <div className="Music" id="Music">
             <div className="OverlayBox">
@@ -27,7 +22,7 @@ function MusicPage() {
             <div className="CompactDiskContainer">
                 <img className="Disc1" src={cd} alt="Compact disk background image"/>
                 <img className="Disc2" src={cd} alt="Compact disk background image"
-                    style={{ animation: "disc2spin " + activateDiscSpin + " linear infinite"}}
+                    style={{ animation: "disc2spin var(--disc-spin) linear infinite"}}
                 />
             </div>
         </div>

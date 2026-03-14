@@ -1,6 +1,6 @@
 :root {
     /*MusicPage: disc animation*/
-    --spinDisc: 10;
+    --disc-spin: 5s;
     /* Colors */
     --background: #2f2235;
     --background-secondary: #3f3244;
