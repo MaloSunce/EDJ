@@ -6,11 +6,11 @@ function ToggleDiscSpin() {
     const r = document.querySelector(':root');
     var rs = getComputedStyle(r);
 
-    let discSpinVal = rs.getPropertyValue('--disc-spin');
+    let discSpinVal = rs.getPropertyValue('--disc-animation-state');
 
-    discSpinVal = (discSpinVal === '0s') ? '5s' : '0s';
+    discSpinVal = (discSpinVal === 'paused') ? 'running' : 'paused';
 
-    document.documentElement.style.setProperty('--disc-spin', discSpinVal);
+    document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
 }
 
 function SongComponent() {
