@@ -24,15 +24,24 @@ function Art() {
             basePath + "star.png",
             basePath + "star.png",
             basePath + "star.png",
-            basePath + "star.png"
-        ],
-        [
             basePath + "star.png",
             basePath + "star.png",
             basePath + "star.png",
             basePath + "star.png"
         ],
         [
+            basePath + "star.png",
+            basePath + "star.png",
+            basePath + "star.png",
+            basePath + "star.png",
+            basePath + "star.png",
+            basePath + "star.png",
+            basePath + "star.png"
+        ],
+        [
+            basePath + "star.png",
+            basePath + "star.png",
+            basePath + "star.png",
             basePath + "star.png",
             basePath + "star.png",
             basePath + "star.png",
