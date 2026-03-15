@@ -1,6 +1,12 @@
 import '../styles/ArtPage.css';
 
+var selectedButtonIndex = -1;
 
+function expandArtPiece(index) {
+    const clickedButton = document.getElementById("Button" + index);
+    clickedButton.style.backgroundColor = "red";
+    selectedButtonIndex = index;
+}
 function Art() {
     const basePath = "../../public/Icons/"
 
@@ -33,14 +39,18 @@ function Art() {
             <div className="GalleryContainer">
                 <div className="Row1">{
                     Array(6).fill().map((_, index) =>
-                        <img className="ArtPiece" src={images[0][index]} alt="Art piece" key={index} />
+                        <img className="ArtPiece" id={'Button' + index} src={images[0][index]} alt="Art piece" key={index}
+                            onClick={() => expandArtPiece(index)} 
+                        />
                     )
 
                 }
                 </div>
                 <div className="Row2">{
                     Array(7).fill().map((_, index) =>
-                        <img className="ArtPiece" src={images[1][index]} alt="Art piece" key={index} />
+                        <img className="ArtPiece" id={'Button' + (index + 6)} src={images[1][index]} alt="Art piece" key={index}
+                            onClick={() => expandArtPiece(index + 6)} 
+                        />
                     )
                 }
                 </div>
