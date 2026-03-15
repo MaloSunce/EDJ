@@ -1,11 +1,17 @@
 import '../styles/ArtPage.css';
 
-var selectedButtonIndex = -1;
+var PreviouseClickIndex = 0;
 
 function expandArtPiece(index) {
     const clickedButton = document.getElementById("Button" + index);
-    clickedButton.style.backgroundColor = "red";
-    selectedButtonIndex = index;
+    clickedButton.style.backgroundColor = "black";
+
+    const resetPrevious = document.getElementById("Button" + PreviouseClickIndex);
+    resetPrevious.style.backgroundColor = "red";
+
+    PreviouseClickIndex = index;
+
+    console.log("Malo: PreviouseClickIndex: " + PreviouseClickIndex)
 }
 function Art() {
     const basePath = "../../public/Icons/"
