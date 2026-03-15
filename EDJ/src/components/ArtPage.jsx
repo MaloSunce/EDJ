@@ -1,4 +1,5 @@
 import '../styles/ArtPage.css';
+import cd from '../../public/Images/cd3.png'
 
 var PreviouseClickIndex = 0;
 
@@ -51,6 +52,7 @@ function Art() {
 
     return (
         <div className="Art" id="Art">
+            <div></div>
             <h1>ART</h1>
 
             <div className="GalleryContainer">
@@ -72,6 +74,15 @@ function Art() {
                 }
                 </div>
             </div>
+
+            {/*<div style={{ display: 'flex', flexDirection: 'row' }}>*/}
+            {/*    <div className="Circle1">*/}
+            {/*        <div className="InnerCircle1" />*/}
+            {/*    </div>*/}
+            {/*    <div className="Circle2">*/}
+            {/*        <div className="InnerCircle2"/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     );
 }
