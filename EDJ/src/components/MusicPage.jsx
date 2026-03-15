@@ -1,12 +1,19 @@
 import '../styles/MusicPage.css'
 import SongComponent from "./SongComponent.jsx";
-
 import cd from '../../public/Images/cd.png'
 function MusicPage() {
     return (
         <div className="Music" id="Music">
             <div className="OverlayBox">
-                <h1>MUSIC</h1>
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    alignItems: 'end',
+                    marginTop: '2rem'
+                }}>
+                    <h1>MUSIC</h1>  
+                    <p style={{ margin: '0 0 2px 10px', fontSize: '1.8rem' }}>Tidal</p>
+                </div>
                 <div className="Discography">
                     <h2 className="SubTitle">Artist's choice</h2>
                     <div className="SelectedSongs">
