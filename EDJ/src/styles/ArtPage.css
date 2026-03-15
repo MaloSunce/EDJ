@@ -5,7 +5,7 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
 
@@ -15,4 +15,30 @@
 .Art h1 {
     position: absolute;
     font-size: 5rem;
+}
+
+.GalleryContainer {
+    margin-top: 35vh;
+}
+
+.Row1, .Row2, .Row3 {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 0;
+}
+
+.ArtPiece {
+    height: 10rem;
+    width: 10rem;
+    background-image: radial-gradient(rgba(0, 0, 0,1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    transition: 0.3s;
+}
+
+.ArtPiece:hover {
+    transform: scale(1.8);
+    box-shadow: 0px 0px 30px 10px rgba(100, 100, 100, 0.1);
+    transition: 0.3s;
 }
