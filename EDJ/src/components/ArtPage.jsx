@@ -4,11 +4,11 @@ var PreviouseClickIndex = 0;
 
 function expandArtPiece(index) {
     const resetPrevious = document.getElementById("Button" + PreviouseClickIndex);
-    resetPrevious.style.backgroundColor = "red";
+    resetPrevious.style.backgroundColor = "black";
     resetPrevious.style.zIndex = "0";
 
     const clickedButton = document.getElementById("Button" + index);
-    clickedButton.style.backgroundColor = "black";
+    clickedButton.style.backgroundColor = "red";
     clickedButton.style.zIndex = "1";
 
     PreviouseClickIndex = index;

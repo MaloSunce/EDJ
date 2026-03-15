@@ -1,6 +1,7 @@
 .Art {
     height: 100vh;
     width: 100vw;
+    min-height: 800px;
     scroll-snap-align: start;
 
     display: flex;
@@ -9,6 +10,7 @@
     align-items: center;
     text-align: center;
 
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -18,23 +20,35 @@
 }
 
 .GalleryContainer {
+    width: 100%;
     margin-top: 26vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Row1, .Row2, .Row3 {
-    width: 100vw;
-    height: 25vh;
+.Row1, .Row2 {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 2rem 0 2rem 0;
 }
 
+.Row1 {
+    height: 28vh;
+}
+
+.Row2 {
+    height: 22vh;
+}
+
 .ArtPiece {
-    height: 10rem;
-    width: 10rem;
+    aspect-ratio: 1 / 1;
+    height: 100%;
     background-image: radial-gradient(rgba(255, 0, 0,1), rgba(100, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-    background-color: red;
+    background-color: black;
     transition: 0.3s;
     transform: scale(1);
     z-index: 0;
