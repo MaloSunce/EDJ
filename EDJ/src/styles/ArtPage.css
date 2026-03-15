@@ -18,7 +18,7 @@
 }
 
 .GalleryContainer {
-    margin-top: 35vh;
+    margin-top: 26vh;
 }
 
 .Row1, .Row2, .Row3 {
@@ -44,4 +44,5 @@
     transform: scale(1.8);
     box-shadow: 0px 0px 30px 10px rgba(100, 100, 100, 0.1);
     transition: 0.3s;
+    z-index: 2 !important;
 }

@@ -3,11 +3,13 @@ import '../styles/ArtPage.css';
 var PreviouseClickIndex = 0;
 
 function expandArtPiece(index) {
-    const clickedButton = document.getElementById("Button" + index);
-    clickedButton.style.backgroundColor = "black";
-
     const resetPrevious = document.getElementById("Button" + PreviouseClickIndex);
     resetPrevious.style.backgroundColor = "red";
+    resetPrevious.style.zIndex = "0";
+
+    const clickedButton = document.getElementById("Button" + index);
+    clickedButton.style.backgroundColor = "black";
+    clickedButton.style.zIndex = "1";
 
     PreviouseClickIndex = index;
 
