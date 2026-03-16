@@ -47,12 +47,38 @@ p {
     margin-left: auto;
 }
 
-.PlayIcon {
-    transition: transform 0.3s ease;
+
+.PlayPauseBtn label {
+    --icon-size: 0.6rem;
+    display: block;
+    margin-right: 0.3rem;
+    box-sizing: border-box;
+    width: 0;
+    height: calc(var(--icon-size) * 2);
+    border-color: transparent transparent transparent var(--text-primary);
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: double;
+    border-width: 0px 0 0px calc(var(--icon-size) * 1.8);
 }
 
-.PlayIcon:hover {
-    transform: scale(1.2);
+.PlayPauseBtn input[type=checkbox] {
+    position: absolute;
+    left: -9999px;
+}
+
+.PlayPauseBtn input[type=checkbox]:checked + label {
+    border-style: solid;
+    border-width: var(--icon-size) 0 var(--icon-size) calc(var(--icon-size) * 1.8);
+}
+
+.PlayPauseBtn input[type=checkbox]:focus + label {
+    background-image: radial-gradient(black, transparent);
+}
+
+
+.PlayPauseBtn:hover {
+    opacity: 0.5;
 }
 
 .AlbumCover {

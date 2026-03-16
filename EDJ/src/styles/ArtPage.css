@@ -10,7 +10,7 @@
     align-items: center;
     text-align: center;
 
-    margin: 5rem 0 0 0;
+    margin: 4rem 0 0 0;
     box-sizing: border-box;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.3));
 }
@@ -18,14 +18,14 @@
 .Art h1 {
     position: absolute;
     font-size: 5rem;
-    margin-top: 6vh;
+    margin: 1rem 0 0 0;
 }
 
 .GalleryContainer {
     width: 100%;
     height: fit-content;
-    margin-top: 26vh;
-    padding-bottom: 1rem;
+    margin-top: 22vh;
+    padding-bottom: 0.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,34 +65,3 @@
     background-color: rgb(100, 0, 0) !important;
     z-index: 2 !important;
 }
-
-/*.Circle1, .Circle2 {
-    width: 100vh;
-    aspect-ratio: 1/1;
-    position: relative;
-    border-radius: 50%;
-    bottom: 90%;
-    outline: solid rgba(245, 40, 170, 0.8) 40px;
-    background-image: linear-gradient(to top, green, pink);
-    z-index: -10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Circle1 {
-    right: 36%;
-}
-
-.Circle2 {
-    left: 36%;
-}
-
-.InnerCircle1, .InnerCircle2 {
-    width: 80vh;
-    aspect-ratio: 1/1;
-    position: relative;
-    border-radius: 50%;
-    outline: solid rgba(245, 40, 170, 0.5) 40px;
-    z-index: -10;
-}*/

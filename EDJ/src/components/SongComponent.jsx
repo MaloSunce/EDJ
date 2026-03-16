@@ -1,8 +1,21 @@
 import '../styles/SongComponent.css'
 import { SiAffinityphoto } from "react-icons/si";
-import { IoIosPlay } from "react-icons/io";
 
-function SongComponent() {
+
+function ToggleDiscSpin() {
+    const r = document.querySelector(':root');
+    var rs = getComputedStyle(r);
+
+    let discSpinVal = rs.getPropertyValue('--disc-animation-state');
+
+    discSpinVal = (discSpinVal === 'paused') ? 'running' : 'paused';
+
+    document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
+}
+
+function SongComponent(props) {
+    let testVar = props.tabindex;
+    console.log("Malo: tabindex: " + testVar);
     return (
         <div className="SongComponent">  {/*NB temporary flex display for placeholder icon*/}
             <div className="AlbumCover" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -25,19 +38,11 @@ function SongComponent() {
                 alignItems: 'center',
                 paddingRight: '0.6rem',
             }}>
-                <IoIosPlay className="PlayIcon" onClick={() => {
-                    document.documentElement.style.setProperty('--disc-animation-state', 'running')
-                }} style={{
-                    color: 'var(--text-primary)',
-                    fontSize: '1.8rem',
-                    alignSelf: 'center',
-                    gridArea: 'area'
-                }} />
-                <div className="PlayIcon" onClick={() => {
-                    document.documentElement.style.setProperty('--disc-animation-state', 'paused')
-                }} style={{ gridArea: 'area', alignSelf: 'center', display: 'flex', flexDirection: 'row', translate: '-70%' }}>
-                    <div style={{ height: '1.2rem', width: '0.4rem', backgroundColor: 'var(--text-primary)', marginLeft: '2px' }} />
-                    <div style={{ height: '1.2rem', width: '0.4rem', backgroundColor: 'var(--text-primary)', translate: '50% 0' }} />
+
+                <div className="PlayPauseBtn">
+                    <input type="checkbox" value="None" id={"PlayPause" + props.tabindex} name="Check"
+                        onClick={() => { ToggleDiscSpin() }} />
+                    <label htmlFor={"PlayPause" + props.tabindex} tabIndex={props.tabindex}></label>
                 </div>
             </div>
 

@@ -19,7 +19,7 @@ function MusicPage() {
                     <div className="SelectedSongs">
                         {
                             Array(4).fill().map((_, index) =>
-                                <SongComponent key={index} index={index} />
+                                <SongComponent key={index} index={index} tabindex={index} />
                             )
                         }
                     </div>

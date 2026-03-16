@@ -13,8 +13,6 @@ function expandArtPiece(index) {
     clickedButton.style.zIndex = "1";
 
     PreviouseClickIndex = index;
-
-    console.log("Malo: PreviouseClickIndex: " + PreviouseClickIndex)
 }
 function Art() {
     const basePath = "../../public/Icons/"
@@ -38,28 +36,17 @@ function Art() {
             basePath + "star.png",
             basePath + "star.png",
             basePath + "star.png"
-        ],
-        [
-            basePath + "star.png",
-            basePath + "star.png",
-            basePath + "star.png",
-            basePath + "star.png",
-            basePath + "star.png",
-            basePath + "star.png",
-            basePath + "star.png"
         ]
     ];
 
     return (
         <div className="Art" id="Art">
-            <div></div>
             <h1>ART</h1>
-
             <div className="GalleryContainer">
                 <div className="Row1">{
                     Array(6).fill().map((_, index) =>
                         <img className="ArtPiece" id={'Button' + index} src={images[0][index]} alt="Art piece" key={index}
-                            onClick={() => expandArtPiece(index)} 
+                            onClick={() => expandArtPiece(index)}
                         />
                     )
 
@@ -68,21 +55,12 @@ function Art() {
                 <div className="Row2">{
                     Array(7).fill().map((_, index) =>
                         <img className="ArtPiece" id={'Button' + (index + 6)} src={images[1][index]} alt="Art piece" key={index}
-                            onClick={() => expandArtPiece(index + 6)} 
+                            onClick={() => expandArtPiece(index + 6)}
                         />
                     )
                 }
                 </div>
             </div>
-
-            {/*<div style={{ display: 'flex', flexDirection: 'row' }}>*/}
-            {/*    <div className="Circle1">*/}
-            {/*        <div className="InnerCircle1" />*/}
-            {/*    </div>*/}
-            {/*    <div className="Circle2">*/}
-            {/*        <div className="InnerCircle2"/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </div>
     );
 }
