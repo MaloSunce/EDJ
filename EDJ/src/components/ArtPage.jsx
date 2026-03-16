@@ -1,5 +1,4 @@
 import '../styles/ArtPage.css';
-import cd from '../../public/Images/cd3.png'
 
 var PreviouseClickIndex = 0;
 

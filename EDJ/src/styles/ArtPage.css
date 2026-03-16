@@ -18,14 +18,14 @@
 .Art h1 {
     position: absolute;
     font-size: 5rem;
-    margin: 1rem 0 0 0;
+    margin: 2rem 0 0 0;
 }
 
 .GalleryContainer {
     width: 100%;
     height: fit-content;
-    margin-top: 22vh;
-    padding-bottom: 0.4rem;
+    margin-top: 26vh;
+    padding-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1.8rem 0 1.8rem 0;
+    margin: 1.7rem 0 1.3rem 0;
 }
 
 .Row1 {

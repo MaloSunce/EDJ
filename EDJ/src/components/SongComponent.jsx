@@ -1,21 +1,20 @@
 import '../styles/SongComponent.css'
 import { SiAffinityphoto } from "react-icons/si";
+import { useState } from 'react';
+
+function SongComponent({ index, active, setIndex }) {
+    const toggleDiscSpin = () => {
+        const r = document.querySelector(':root');
+        var rs = getComputedStyle(r);
+
+        let discSpinVal = rs.getPropertyValue('--disc-animation-state');
+
+        discSpinVal = (discSpinVal === 'paused') ? 'running' : 'paused';
+
+        document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
+    }
 
 
-function ToggleDiscSpin() {
-    const r = document.querySelector(':root');
-    var rs = getComputedStyle(r);
-
-    let discSpinVal = rs.getPropertyValue('--disc-animation-state');
-
-    discSpinVal = (discSpinVal === 'paused') ? 'running' : 'paused';
-
-    document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
-}
-
-function SongComponent(props) {
-    let testVar = props.tabindex;
-    console.log("Malo: tabindex: " + testVar);
     return (
         <div className="SongComponent">  {/*NB temporary flex display for placeholder icon*/}
             <div className="AlbumCover" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -40,9 +39,10 @@ function SongComponent(props) {
             }}>
 
                 <div className="PlayPauseBtn">
-                    <input type="checkbox" value="None" id={"PlayPause" + props.tabindex} name="Check"
-                        onClick={() => { ToggleDiscSpin() }} />
-                    <label htmlFor={"PlayPause" + props.tabindex} tabIndex={props.tabindex}></label>
+                    <input type="checkbox" value="None" id={"PlayPause" + index} name="Check"
+                        onChange={() => { toggleDiscSpin(); setIndex(); }}
+                        checked={active ? '' : 'checked'} />
+                    <label htmlFor={"PlayPause" + index} tabIndex={index}></label>
                 </div>
             </div>
 
