@@ -2,6 +2,8 @@ import '../styles/SongComponent.css'
 import { SiAffinityphoto } from "react-icons/si";
 import { useState } from 'react';
 
+
+
 function SongComponent({ index, active, setIndex }) {
     const toggleDiscSpin = () => {
         const r = document.querySelector(':root');
@@ -9,11 +11,32 @@ function SongComponent({ index, active, setIndex }) {
 
         let discSpinVal = rs.getPropertyValue('--disc-animation-state');
 
-        discSpinVal = (discSpinVal === 'paused') ? 'running' : 'paused';
+        discSpinVal = (active > -1) ? 'running' : 'paused';
 
         document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
     }
 
+    const [isActive, setIsActive] = useState(false);
+    const handleButtonState = event => {
+        // Different song was playing, now changed to current song
+        if (event.target.checked && active === index) {
+            setIsActive(true);
+            setIndex();
+        }
+        // Current song was playing, now changed to paused
+        else if (!event.target.checked && active === index) {
+            setIsActive(true);
+            setIndex();
+        }
+        // Different song is playing
+        else {
+            setIsActive(false);
+        }
+
+        // Update disc spin state
+        let discSpinVal = (active > -1) ? 'running' : 'paused';
+        document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
+    };
 
     return (
         <div className="SongComponent">  {/*NB temporary flex display for placeholder icon*/}
@@ -40,8 +63,8 @@ function SongComponent({ index, active, setIndex }) {
 
                 <div className="PlayPauseBtn">
                     <input type="checkbox" value="None" id={"PlayPause" + index} name="Check"
-                        onChange={() => { toggleDiscSpin(); setIndex(); }}
-                        checked={active ? '' : 'checked'} />
+                        onChange={() => { setIndex(); toggleDiscSpin(); }}
+                        checked={(active === index) ? '' : 'checked'} />
                     <label htmlFor={"PlayPause" + index} tabIndex={index}></label>
                 </div>
             </div>

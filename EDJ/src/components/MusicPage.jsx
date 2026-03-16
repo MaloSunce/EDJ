@@ -8,6 +8,17 @@ import { useState } from 'react';
 function MusicPage() {
     // State tracker for SongComponents
     const [activeIndex, setActiveIndex] = useState(-1);
+    const toggleDiscSpin = () => {
+        const r = document.querySelector(':root');
+        var rs = getComputedStyle(r);
+
+        let discSpinVal = rs.getPropertyValue('--disc-animation-state');
+
+        discSpinVal = (activeIndex > -1) ? 'running' : 'paused';
+
+        document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
+    }
+
 
     return (
         <div className="Music" id="Music">
@@ -28,7 +39,7 @@ function MusicPage() {
                             Array(4).fill().map((_, index) =>
                                 <SongComponent key={index}
                                     index={index}
-                                    active={activeIndex === index}
+                                    active={activeIndex}
                                     setIndex={() => setActiveIndex(index)}
                                 />
                             )
