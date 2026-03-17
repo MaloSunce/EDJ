@@ -4,20 +4,23 @@ import { useState } from 'react';
 
 
 
-function SongComponent({ index, active, setIndex }) {
-    const [isActive, setIsActive] = useState(false);
-    // Update active index, active state, and disc animation
-    const handleChange = () => {
-        setIsActive(!isActive);
-        setIndex(index);
+function SongComponent({ index, activeIndex, setIndex }) {
 
-        // Song has been paused, no other song is playing, pause disc spin
-        if (isActive && (active === index)) {
-            document.documentElement.style.setProperty('--disc-animation-state', 'paused');
-        } else { // Otherwise, spin dis
-            document.documentElement.style.setProperty('--disc-animation-state', 'running');
+    const [isActive, setIsActive] = useState(false);
+
+    const handleChange = event => {
+        if (!isActive && event.target.checked) {
+            setIsActive(true);
+        } else {
+            setIndex(-1);
+            setIsActive(false);
         }
-    }
+
+        console.log("Malo - activeIndex: " + activeIndex + "\t index: " + index);
+
+        let discSpinState = (activeIndex > -1) ? 'running' : 'paused';
+        document.documentElement.style.setProperty('--disc-animation-state', discSpinState);
+    };
 
     return (
         <div className="SongComponent">  {/*NB temporary flex display for placeholder icon*/}
@@ -44,8 +47,8 @@ function SongComponent({ index, active, setIndex }) {
 
                 <div className="PlayPauseBtn">
                     <input type="checkbox" value="None" id={"PlayPause" + index} name="Check"
-                        onChange={() => { handleChange(); }}
-                        checked={((active === index) && isActive) ? '' : 'checked'} />
+                        onChange={handleChange}
+                        checked={(activeIndex === index && !isActive) ? '' : 'checked'} />
                     <label htmlFor={"PlayPause" + index} tabIndex={index}></label>
                 </div>
             </div>

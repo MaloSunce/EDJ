@@ -50,9 +50,15 @@ a {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    opacity: 0.8;
 }
 
 .Pages a {
     text-decoration: none;
+    transition: 0.2s;
+    opacity: 0.7;
+}
+
+.Pages a:hover {
+    transition: 0.2s;
+    opacity: 1;
 }

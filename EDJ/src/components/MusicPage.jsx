@@ -28,8 +28,8 @@ function MusicPage() {
                             Array(4).fill().map((_, index) =>
                                 <SongComponent key={index}
                                     index={index}
-                                    active={activeIndex}
-                                    setIndex={() => setActiveIndex(index)}
+                                    setIndex={() => {setActiveIndex(index)}}
+                                    activeIndex={activeIndex}
                                 />
                             )
                         }
