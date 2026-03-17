@@ -10,7 +10,7 @@ function SongComponent({ index, activeIndex, setIndex }) {
     let discSpinState = 'running';
 
     const handleChange = event => {
-        if (!isActive && event.target.checked) {
+        if (!isActive && event.target.checked) { // No tracks are playing, pause disc spin
             setIsActive(true);
             discSpinState = 'paused';
         } else {

@@ -28,3 +28,12 @@
     transform: scale(1.2);
     opacity: 1;
 }
+
+@media (max-width: 750px) {
+
+    .NavContainer a {
+        width: 70%;
+        font-size: 1.1rem;
+        transition: 0.4s;
+    }
+}

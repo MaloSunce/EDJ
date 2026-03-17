@@ -8,6 +8,8 @@
     grid-template-rows: 5fr 10fr;
     padding-top: 2vh;
     z-index: 10;
+
+    --icon-size: 1.5rem;
 }
 
 .SocialMediaIcons {
@@ -19,7 +21,7 @@
 
 .HeaderIcon {
     color: var(--accent);
-    font-size: 1.5rem;
+    font-size: var(--icon-size);
 }
 
 a {
@@ -61,4 +63,26 @@ a {
 .Pages a:hover {
     transition: 0.2s;
     opacity: 1;
+}
+
+@media (max-width: 650px) {
+
+    .Pages {
+        gap: 1.2rem;
+    }
+
+    .Pages a {
+        font-size: 80%;
+        transition: 0.4s;
+    }
+
+    .SocialMediaIcons {
+        gap: 1rem;
+    }
+
+    .HeaderIcon {
+        font-size: calc(var(--icon-size) * 0.9);
+        margin-top: 0.2rem;
+        transition: 0.4s;
+    }
 }

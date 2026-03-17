@@ -46,6 +46,7 @@
     opacity: 0.8;
     padding-left: 2rem !important;
     padding-top: 2rem !important;
+    transition: 0.4s;
 }
 
 /* Inifinity reflection */
@@ -104,4 +105,12 @@
 .CompactDiskimg:hover {
     transition: 0.7s;
     rotate: 180deg;
+}
+
+@media (max-width: 750px) {
+
+    .Header h2 {
+        translate: 50vw;
+        transition: 0.4s;
+    }
 }
