@@ -5,38 +5,19 @@ import { useState } from 'react';
 
 
 function SongComponent({ index, active, setIndex }) {
-    const toggleDiscSpin = () => {
-        const r = document.querySelector(':root');
-        var rs = getComputedStyle(r);
-
-        let discSpinVal = rs.getPropertyValue('--disc-animation-state');
-
-        discSpinVal = (active > -1) ? 'running' : 'paused';
-
-        document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
-    }
-
     const [isActive, setIsActive] = useState(false);
-    const handleButtonState = event => {
-        // Different song was playing, now changed to current song
-        if (event.target.checked && active === index) {
-            setIsActive(true);
-            setIndex();
-        }
-        // Current song was playing, now changed to paused
-        else if (!event.target.checked && active === index) {
-            setIsActive(true);
-            setIndex();
-        }
-        // Different song is playing
-        else {
-            setIsActive(false);
-        }
+    // Update active index, active state, and disc animation
+    const handleChange = () => {
+        setIsActive(!isActive);
+        setIndex(index);
 
-        // Update disc spin state
-        let discSpinVal = (active > -1) ? 'running' : 'paused';
-        document.documentElement.style.setProperty('--disc-animation-state', discSpinVal);
-    };
+        // Song has been paused, no other song is playing, pause disc spin
+        if (isActive && (active === index)) {
+            document.documentElement.style.setProperty('--disc-animation-state', 'paused');
+        } else { // Otherwise, spin dis
+            document.documentElement.style.setProperty('--disc-animation-state', 'running');
+        }
+    }
 
     return (
         <div className="SongComponent">  {/*NB temporary flex display for placeholder icon*/}
@@ -63,8 +44,8 @@ function SongComponent({ index, active, setIndex }) {
 
                 <div className="PlayPauseBtn">
                     <input type="checkbox" value="None" id={"PlayPause" + index} name="Check"
-                        onChange={() => { setIndex(); toggleDiscSpin(); }}
-                        checked={(active === index) ? '' : 'checked'} />
+                        onChange={() => { handleChange(); }}
+                        checked={((active === index) && isActive) ? '' : 'checked'} />
                     <label htmlFor={"PlayPause" + index} tabIndex={index}></label>
                 </div>
             </div>

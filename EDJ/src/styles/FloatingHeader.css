@@ -4,8 +4,8 @@
     position: fixed;
 
     display: grid;
-    grid-template-areas: "StarIcon SocialMedia";
-    grid-template-rows: 1fr 10fr;
+    grid-template-areas: "Left Right";
+    grid-template-rows: 5fr 10fr;
     padding-top: 2vh;
     z-index: 10;
 }
@@ -23,12 +23,12 @@
 }
 
 a {
-    grid-area: SocialMedia;
+    grid-area: Right;
     color: var(--text-primary);
 }
 
 .StarIcon {
-    grid-area: StarIcon;
+    grid-area: Left;
     padding-left: 0.5rem;
    
 }
@@ -42,4 +42,17 @@ a {
 .StarIcon img:hover {
     transition: 0.7s;
     transform: scale(1.2);
+}
+
+.Pages {
+    grid-area: Left;
+    margin: 0.2rem 0 0 3.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    opacity: 0.8;
+}
+
+.Pages a {
+    text-decoration: none;
 }
