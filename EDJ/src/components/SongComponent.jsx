@@ -7,18 +7,17 @@ import { useState } from 'react';
 function SongComponent({ index, activeIndex, setIndex }) {
 
     const [isActive, setIsActive] = useState(false);
+    let discSpinState = 'running';
 
     const handleChange = event => {
         if (!isActive && event.target.checked) {
             setIsActive(true);
+            discSpinState = 'paused';
         } else {
             setIndex(-1);
             setIsActive(false);
         }
 
-        console.log("Malo - activeIndex: " + activeIndex + "\t index: " + index);
-
-        let discSpinState = (activeIndex > -1) ? 'running' : 'paused';
         document.documentElement.style.setProperty('--disc-animation-state', discSpinState);
     };
 
