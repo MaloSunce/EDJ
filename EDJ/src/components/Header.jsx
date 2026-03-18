@@ -14,7 +14,7 @@ function Header() {
                 <h2>∞ fans</h2>
             </div>
 
-            <img className="CompactDiskimg" src={cd2} alt="Compact disc background image" />;
+            <img className="CompactDiskimg" src={cd2} alt="Spinning compact disc" />;
 
             <div className="Nav">
                 <NavBar></NavBar>

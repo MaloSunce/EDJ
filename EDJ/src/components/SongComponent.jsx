@@ -29,6 +29,7 @@ function SongComponent({ index, activeIndex, setIndex }) {
                     color: 'var(--text-primary)',
                     opacity: '0.5',
                     fontSize: '2rem',
+                    alt: 'Placeholder album cover'
                 }} />
             </div>
             <div className="TextContainter">
@@ -44,7 +45,7 @@ function SongComponent({ index, activeIndex, setIndex }) {
                 paddingRight: '0.6rem',
             }}>
 
-                <div className="PlayPauseBtn">
+                <div className="PlayPauseBtn" alt="Play button">
                     <input type="checkbox" value="None" id={"PlayPause" + index} name="Check"
                         onChange={handleChange}
                         checked={(activeIndex === index && !isActive) ? '' : 'checked'} />

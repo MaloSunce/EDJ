@@ -38,8 +38,8 @@ function MusicPage() {
             </div>
 
             <div className="CompactDiskContainer">
-                <img className="Disc1" src={cd} alt="Compact disk background image"/>
-                <img className="Disc2" src={cd} alt="Compact disk background image"
+                <img className="Disc1" src={cd} alt="" aria-hidden="true" />
+                <img className="Disc2" src={cd} alt="" aria-hidden="true"
                     style={{ animation: "disc2spin 5s linear infinite", animationPlayState: "var(--disc-animation-state)" }}
                 />
             </div>

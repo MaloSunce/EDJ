@@ -17,10 +17,10 @@
 
 
 .NavContainer a {
-    font-size: 1.3rem;
     opacity: 0.8;
-    text-decoration: none;
     transition: 0.3s;
+    font-size: 1.3rem;
+    text-decoration: none;
 }
 
 .NavContainer a:hover {

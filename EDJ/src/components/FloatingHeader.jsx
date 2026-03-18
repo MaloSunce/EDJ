@@ -12,8 +12,9 @@ function FloatingHeader() {
     return (
         <div className="FloatingHeader">
 
-            <div className="StarIcon"> {/*Icons made by <a href="https://www.flaticon.com/authors/gowi" title="GOWI"> GOWI </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a>*/}
-                <a href="#"><img src={star} alt="Star Icon" /></a>
+            <div className="StarIcon">
+                {/*Icons made by <a href="https://www.flaticon.com/authors/gowi" title="GOWI"> GOWI </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a>*/}
+                <a href="#"><img src={star} alt="Back to top" /></a>
             </div>
 
             <div className="Pages">
@@ -25,19 +26,24 @@ function FloatingHeader() {
 
             <div className="SocialMediaIcons">
                 <a href="https://www.youtube.com" target="_blank">
-                    <RiYoutubeLine className="HeaderIcon" />
+                    <RiYoutubeLine className="HeaderIcon">
+                        <span className="HiddenText">Link to YouTube</span></RiYoutubeLine>
                 </a>
                 <a href="https://open.spotify.com" target="_blank">
-                    <AiOutlineSpotify className="HeaderIcon" />
+                    <AiOutlineSpotify className="HeaderIcon">
+                        <span className="HiddenText">Link to Spotify</span></AiOutlineSpotify>
                 </a>
                 <a href="https://www.instagram.com" target="_blank">
-                    <RiInstagramLine className="HeaderIcon" />
+                    <RiInstagramLine className="HeaderIcon">
+                        <span className="HiddenText">Link to Instagram</span></RiInstagramLine>
                 </a>
                 <a href="https://www.facebook.com/" target="_blank">
-                    <RiFacebookCircleLine className="HeaderIcon" />
+                    <RiFacebookCircleLine className="HeaderIcon">
+                        <span className="HiddenText">Link to FaceBook</span></RiFacebookCircleLine>
                 </a>
                 <a href="https://soundcloud.com" target="_blank">
-                    <RiSoundcloudLine className="HeaderIcon" />
+                    <RiSoundcloudLine className="HeaderIcon">
+                        <span className="HiddenText">Link to SoundCloud</span></RiSoundcloudLine>
                 </a>
                 <div style={{ width: '0.1rem' }}></div>
             </div>

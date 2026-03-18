@@ -15,11 +15,12 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.3));
 }
 
+
 .Art h1 {
     position: absolute;
     font-size: 5rem;
-    margin: 2rem 0 0 0;
 }
+
 
 .GalleryContainer {
     width: 100%;
