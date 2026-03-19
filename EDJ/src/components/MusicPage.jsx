@@ -19,7 +19,7 @@ function MusicPage() {
                     marginTop: '2rem'
                 }}>
                     <h1>MUSIC</h1>
-                    <p style={{ margin: '0 0 2px 20px', paddingLeft: '1rem', fontSize: '1.7rem' }}>Tidal</p>
+                    <p style={{ margin: '0 0 2px 20px', paddingLeft: '0.5rem', fontSize: '1.7rem' }}>Tidal</p>
                 </div>
                 <div className="Discography">
                     <h2 className="SubTitle">Artist's choice</h2>

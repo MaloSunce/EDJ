@@ -1,25 +1,25 @@
 [
   {
     "title": "Sing About Me, I'm Dying Of Thirst",
-    "audioFile": "sing-about-me.mp3",
+    "audioFile": "../public/Music/sing-about-me.mp3",
     "fromAlbum": "good kid, m.A.A.d city (Deluxe)",
     "albumCover": "../public/Music/sing-about-me.jpg"
   },
   {
     "title": "Didn't Cha Know",
-    "audioFile": "didnt-cha-know.mp3",
+    "audioFile": "../public/Music/didnt-cha-know.mp3",
     "fromAlbum": "Mama's Gun'",
     "albumCover": "../public/Music/didnt-cha-know.jpg"
   },
   {
     "title": "Daydreaming",
-    "audioFile": "daydreaming.mp3",
+    "audioFile": "../public/Music/daydreaming.mp3",
     "fromAlbum": "Why Lawd?",
     "albumCover": "../public/Music/daydreaming.jpg"
   },
   {
     "title": "Eggs Aisle",
-    "audioFile": "eggs-aisle.mp3",
+    "audioFile": "../public/Music/eggs-aisle.mp3",
     "fromAlbum": "Live from Space",
     "albumCover": "../public/Music/eggs-aisle.jpg"
   }
