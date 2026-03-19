@@ -110,7 +110,7 @@
 @media (max-width: 750px) {
 
     .Header h2 {
-        translate: 50vw;
+        translate: 80vw;
         transition: 0.4s;
     }
 }
