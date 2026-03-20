@@ -1,15 +1,21 @@
 import '../styles/MusicPage.css'
 import cd from '../../public/Images/cd.png'
-import AudioPlayer from "./AudioPlayer.jsx";
 import SongComponent from "./SongComponent.jsx";
-import tracks from '../../public/Music/tracks.json';
 
 import { useState } from 'react';
 
 
 function MusicPage() {
     // State tracker for SongComponents
-    const [activeIndex, setActiveIndex] = useState(-1);
+    const [activeIndex, setActiveIndex] = useState(-1); 
+
+    const handlePlayState = (audioRef, isPlaying) => {
+        if (isPlaying) {
+            audioRef.play();
+        } else {
+            audioRef.pause();
+        }
+    }
 
 
     return (
@@ -32,6 +38,7 @@ function MusicPage() {
                                 <SongComponent key={index}
                                     index={index}
                                     setIndex={() => { setActiveIndex(index) }}
+                                    handlePlayState={handlePlayState}
                                     activeIndex={activeIndex}
                                 />
                             )

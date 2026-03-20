@@ -3,40 +3,30 @@ import { useState, useMemo } from 'react';
 import tracks from '../../public/Music/tracks.json';
 
 
-function SongComponent({ index, activeIndex, setIndex }) {
+function SongComponent({ index, activeIndex, setIndex, handlePlayState }) {
 
     //let audio = new Audio(`${tracks[index].audioFile}`);
     const audio = useMemo(() => new Audio(`${tracks[index].audioFile}`), [tracks[index].audioFile]);
-
-    const playAudio = () => {
-        audio.play()
-    }
-
-    const pauseAudio = () => {
-        audio.pause()
-
-    }
 
     const [isActive, setIsActive] = useState(false);
     let discSpinState = 'running';
 
     const handleChange = event => {
-
         // No tracks are playing, pause audio and disc spin
         if (!isActive && event.target.checked) {
             setIsActive(true);
             discSpinState = 'paused';
-            pauseAudio();
+            handlePlayState(audio, false);
         }
         // Different track has been played
         else if (event.target.checked) {
-            pauseAudio();
+            handlePlayState(audio, null);
         }
-        // Current track has been played
+         //Current track has been played
         else {
             setIndex(-1);
             setIsActive(false);
-            playAudio();
+            handlePlayState(audio, true);
         }
         document.documentElement.style.setProperty('--disc-animation-state', discSpinState);
     };
