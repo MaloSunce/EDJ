@@ -57,12 +57,17 @@ function SongComponent({ index, activeIndex, setIndex }) {
             </div>
             <div style={{
                 margin: 'auto 0 auto auto',
-                display: 'grid',
-                gridTemplateAreas: 'area',
+                display: 'flex',
+                flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center',
                 paddingRight: '0.6rem',
             }}>
+                <div className="TidalLink">
+                    <a href={tracks[index].tidalLink} target="_blank">
+                        <p>Tidal</p>
+                    </a>
+                </div>
 
                 <div className="PlayPauseBtn" alt="Play button">
                     <input type="checkbox" value="None" id={"PlayPause" + index} name="Check"

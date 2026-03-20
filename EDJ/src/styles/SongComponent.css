@@ -36,6 +36,29 @@ p {
     margin-top: -0.7rem;
 }
 
+.TidalLink {
+    --link-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    outline: solid var(--link-color) 1px;
+    background-image: linear-gradient(to right, rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 0.4));
+    padding: 0 1rem 0 1rem;
+    margin-right: 1.2rem;
+    align-self: center;
+}
+
+.TidalLink p {
+    color: var(--link-color);
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.TidalLink a {
+    text-decoration: none;
+}
+
 .SongComponent button {
     background: none;
     color: inherit;
@@ -44,7 +67,6 @@ p {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    margin-left: auto;
 }
 
 
