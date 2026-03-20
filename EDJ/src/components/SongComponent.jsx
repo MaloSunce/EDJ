@@ -14,7 +14,7 @@ function SongComponent({ index, activeIndex, setIndex }) {
 
     const pauseAudio = () => {
         audio.pause()
-        audio.currentTime = 0;
+
     }
 
     const [isActive, setIsActive] = useState(false);

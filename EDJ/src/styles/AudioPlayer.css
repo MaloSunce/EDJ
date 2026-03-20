@@ -1,0 +1,45 @@
+.AudioPlayer {
+    width: 15rem;
+    height: 4rem;
+    background-color: grey;
+    z-index: 1;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem 1rem 1rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 5px;
+    accent-color: blue;
+    outline: none;
+}
+
+.TrackDuration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.TrackDuration > p {
+    font-size: 10px;
+    font-weight: 500;
+    color: red;
+    margin: 0;
+}
+
+button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 34px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: -25px auto 10px auto;
+}

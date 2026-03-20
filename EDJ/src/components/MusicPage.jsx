@@ -1,6 +1,8 @@
 import '../styles/MusicPage.css'
-import SongComponent from "./SongComponent.jsx";
 import cd from '../../public/Images/cd.png'
+import AudioPlayer from "./AudioPlayer.jsx";
+import SongComponent from "./SongComponent.jsx";
+import tracks from '../../public/Music/tracks.json';
 
 import { useState } from 'react';
 
@@ -8,6 +10,7 @@ import { useState } from 'react';
 function MusicPage() {
     // State tracker for SongComponents
     const [activeIndex, setActiveIndex] = useState(-1);
+
 
     return (
         <div className="Music" id="Music">
@@ -28,7 +31,7 @@ function MusicPage() {
                             Array(4).fill().map((_, index) =>
                                 <SongComponent key={index}
                                     index={index}
-                                    setIndex={() => {setActiveIndex(index)}}
+                                    setIndex={() => { setActiveIndex(index) }}
                                     activeIndex={activeIndex}
                                 />
                             )

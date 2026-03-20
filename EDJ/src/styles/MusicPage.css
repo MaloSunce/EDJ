@@ -46,6 +46,15 @@
     z-index: 1;
 }
 
+.AudioPlayer {
+    width: 15rem;
+    height: 4rem;
+    background-color: grey;
+    position: absolute;
+    margin: 75vh 0 0 35vw;
+    z-index: 1;
+}
+
 @media (max-width: 750px) {
 
     .SelectedSongs {
