@@ -7,9 +7,9 @@ import { useState } from 'react';
 
 function MusicPage() {
     // State tracker for SongComponents
-    const [activeIndex, setActiveIndex] = useState(-1);
+    const [activeIndex, setActiveIndex] = useState(-1); 
 
-    const handleAudioPlay = (audioRef, isPlaying) => {
+    const handlePlayState = (audioRef, isPlaying) => {
         if (isPlaying) {
             audioRef.play();
         } else {
@@ -36,8 +36,9 @@ function MusicPage() {
                             Array(4).fill().map((_, index) =>
                                 <SongComponent key={index}
                                     index={index}
-                                    handleAudioPlay={handleAudioPlay }
+  
                                     setIndex={() => { setActiveIndex(index) }}
+                                    handlePlayState={handlePlayState}
                                     activeIndex={activeIndex}
                                 />
                             )
