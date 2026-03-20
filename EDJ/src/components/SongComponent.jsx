@@ -5,7 +5,7 @@ import tracks from '../../public/Music/tracks.json';
 
 function SongComponent({ index, activeIndex, setIndex }) {
 
-    //let audio = new Audio(`${tracks[index].audioFile}`);
+    // Persistent audio instance
     const audio = useMemo(() => new Audio(`${tracks[index].audioFile}`), [tracks[index].audioFile]);
 
     const playAudio = () => {
@@ -20,19 +20,16 @@ function SongComponent({ index, activeIndex, setIndex }) {
     const [isActive, setIsActive] = useState(false);
     let discSpinState = 'running';
 
+    // Update the 'checked' state of play/pause button, audio, and disc spin
     const handleChange = event => {
 
-        // No tracks are playing, pause audio and disc spin
-        if (!isActive && event.target.checked) {
+        // Current track paused
+        if (event.target.checked) {
             setIsActive(true);
             discSpinState = 'paused';
             pauseAudio();
         }
-        // Different track has been played
-        else if (event.target.checked) {
-            pauseAudio();
-        }
-        // Current track has been played
+        // Current track playing
         else {
             setIndex(-1);
             setIsActive(false);
