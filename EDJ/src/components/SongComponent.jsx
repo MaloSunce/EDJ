@@ -4,40 +4,47 @@ import tracks from '../../public/Music/tracks.json';
 
 
 function SongComponent({ index, activeIndex, setIndex }) {
-
     // Persistent audio instance
     const audio = useMemo(() => new Audio(`${tracks[index].audioFile}`), [tracks[index].audioFile]);
 
-    const playAudio = () => {
-        audio.play()
-    }
-
-    const pauseAudio = () => {
-        audio.pause()
-
-    }
-
+    // State trackers
     const [isActive, setIsActive] = useState(false);
     let discSpinState = 'running';
 
     // Update the 'checked' state of play/pause button, audio, and disc spin
     const handleChange = event => {
 
-        // Current track paused
-        if (event.target.checked) {
+        //console.log("Malo - activeIndex === index: " + (activeIndex === index) + "\tisActive: " + isActive);
+        // No tracks are playing, pause audio and disc spin
+        if (!isActive && event.target.checked) {
+            console.log("Malo - pausing");
+
             setIsActive(true);
             discSpinState = 'paused';
-            pauseAudio();
+            audio.pause();
         }
-        // Current track playing
-        else {
+        //Current track has been played
+        else if ((isActive && !event.target.checked) || activeIndex === -1) {
+            console.log("Malo - playing");
+
             setIndex(-1);
             setIsActive(false);
-            playAudio();
+            audio.play();
         }
+        // Different track has been played
+        else {
+            console.log("Malo - switching");
+
+            setIndex(index);
+            setIsActive(false);
+            audio.pause();
+        }
+        // Set disc spin animation state
         document.documentElement.style.setProperty('--disc-animation-state', discSpinState);
     };
 
+    // Return rectangular component with album cover, track title, album name, 
+    // tidal link, and play/pause button
     return (
         <div className="SongComponent">  {/*NB temporary flex display for placeholder icon*/}
             <div className="AlbumCover" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
